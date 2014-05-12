@@ -1,16 +1,7 @@
-It should take the number of pins knocked down by each ball as input and give the score for
+== It should take the number of pins knocked down by each ball as input and give the score for
 each frame as output. The details:
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
-•
+
+
 Bowling is played by throwing a ball down a narrow alley toward ten wooden pins.
 The object is to knock down as many pins as possible per throw
 The game is played in ten frames. At the beginning of each frame, all ten pins are set
