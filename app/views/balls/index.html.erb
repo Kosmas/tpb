@@ -1,0 +1,28 @@
+<h2>Drop some pins</h2>
+
+<ul>
+  <% @balls.each do |ball| %>
+    <% ball.frame.game.players.each do |player| %>
+      <% if player.id == ball.player_id %>
+        <li><%= player.first_name %>
+            Ball1 : <%= ball.pins_knocked1 %>
+            Ball2 : <%= ball.pins_knocked2 %>
+        </li>
+      <% end %>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= form_for [@frame, @ball]  do |f| %>
+  <div>
+    <%= f.label :player_id %><br>
+    <%= f.select(:player_id, options_from_collection_for_select(@ball.frame.game.players, :id, :first_name), {prompt: 'Please Choose'} ) %>
+  </div>
+  <%= f.submit %>
+<% end %>
+
+<div>
+  <%= render "score" %>
+</div>
+
+

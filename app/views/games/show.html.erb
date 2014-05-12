@@ -1,0 +1,16 @@
+<h2>Game No : <%= @game.id %></h2>
+<div>Number of players : <%= @game.players_no %></div>
+
+<div>
+  <ul>
+    <% @game.players.each do |player| %>
+      <li><%= player.first_name %> <%= player.surname %></li>
+    <% end %>
+  </ul>
+</div>
+
+<% if @game.players.count < @game.players_no %>
+  <div><%= link_to 'Add player', new_game_player_path(@game) %>
+<% else %>
+  <div><%= link_to 'Start Game', new_game_frame_path(@game) %>
+<% end %>

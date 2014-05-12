@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pins_knocked: MyString
+  frame_id: 
+  player_id: 
+
+two:
+  pins_knocked: MyString
+  frame_id: 
+  player_id: 

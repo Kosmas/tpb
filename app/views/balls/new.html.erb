@@ -1,0 +1,6 @@
+<h2>Roll the ball</h2>
+
+<%= form_for [@frame, @ball] do |f| %>
+  <%= f.hidden_field(:player_id, value: @ball.frame.game.players.first.id ) %>
+  <%= f.submit %>
+<% end %>

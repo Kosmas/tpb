@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  resources :games do
+    resources :players do
+      resources :frames
+    end
+    resources :frames
+  end
+
+  resources :frames do
+    resources :players do
+      resources :balls
+    end
+    resources :balls
+  end
+
+  resources :balls
+
   root 'games#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

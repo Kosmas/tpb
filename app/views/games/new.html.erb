@@ -1,0 +1,11 @@
+<div>Press the button below to start new game</dv>
+
+<%= form_for(@game) do |f| %>
+
+  <p>
+    <%= f.label :players_no, 'Enter number of players' %>
+    <%= f.number_field :players_no %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

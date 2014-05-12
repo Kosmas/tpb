@@ -1,0 +1,7 @@
+<h2>Running Score</h2>
+
+<ul>
+  <% @players_score.each do |score| %>
+    <li><%= score.player.first_name %> <%= score.total %></li>
+  <% end %>
+</ul>

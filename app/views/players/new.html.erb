@@ -1,0 +1,25 @@
+<h2>New Player</h2>
+
+<%= form_for [@game, @player] do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prevented this player from being saved.</h2>
+
+      <ul>
+        <% @player.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :surname %><br>
+    <%= f.text_field :surname %>
+  </p>
+  <%= f.submit %>
+<% end %>
