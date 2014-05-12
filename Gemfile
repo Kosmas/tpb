@@ -38,5 +38,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'cucumber-rails', group: :test, require: false, github: 'cucumber/cucumber-rails'
+gem 'cucumber-rails', group: :test, require: false
 gem 'database_cleaner', group: :test
+gem 'rspec-rails', group: :test
+gem 'factory_girl_rails', group: :test
+
