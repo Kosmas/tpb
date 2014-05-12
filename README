@@ -23,3 +23,15 @@ Likewise, if a spare is thrown in the tenth frame, the player may throw one more
 to complete the score of the spare.
 Thus the tenth frame may have three balls instead of two.
 For background information, please see http://en.wikipedia.org/wiki/Ten-pin_bowling
+
+== Instructions
+
+* Clone the app
+* Run the migrations
+* Start the server and go to http://localhost:3000
+* Start a nnew game
+* add the amount of players you want
+* Add the players' names
+* When all players have been entered you can start a new frame
+* In the frame you can roll the ball for each player.
+*
